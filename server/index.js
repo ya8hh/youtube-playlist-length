@@ -33,7 +33,7 @@ app.post('/getPlaylistDuration', async (req, res) => {
             const videoIds = response.data.items.map(item => item.contentDetails.videoId).join(',');
             videoCount += response.data.items.length;
 
-            const videoResponse = await axios.get('https://www.googleapis.com/youtube/v3/videos', {
+            const videoResponse = await axios.get('', {
                 params: {
                     part: 'contentDetails',
                     id: videoIds,
