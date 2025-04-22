@@ -20,7 +20,7 @@ app.post('/getPlaylistDuration', async (req, res) => {
         let nextPageToken = '';
 
         do {
-            const response = await axios.get('https://www.googleapis.com/youtube/v3/playlistItems', {
+            const response = await axios.get('', {
                 params: {
                     part: 'contentDetails',
                     maxResults: 50,
