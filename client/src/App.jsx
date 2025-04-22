@@ -23,7 +23,7 @@ function App() {
         const playlistId = playlistIdMatch[1];
 
         try {
-            const response = await axios.post('http://localhost:5000/getPlaylistDuration', { playlistId });
+            const response = await axios.post('', { playlistId });
             setDuration(response.data.duration);
             setVideoCount(response.data.videoCount);
         } catch (err) {
